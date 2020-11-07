@@ -1,0 +1,28 @@
+name: Build Develop
+
+on:
+  push:
+    branches: '**'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '12.x'
+      - uses: subosito/flutter-action@v1
+      - run: flutter pub get
+      
+      - name: Run Unit Tests
+        run: flutter test
+
+      - name: Build Develop for Android
+        run: flutter build appbundle
+
+      - name: Build Develop for iOS
+        run: flutter build ios --release --no-codesign
