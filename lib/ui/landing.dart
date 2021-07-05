@@ -1,3 +1,5 @@
+import 'package:episode/constants/episode_strings.dart';
+import 'package:episode/routing/navigation_route.dart';
 import 'package:flutter/material.dart';
 
 class Landing extends StatelessWidget {
@@ -7,9 +9,32 @@ class Landing extends StatelessWidget {
       appBar: AppBar(),
       body: Center(
         child: Column(
-          children: [],
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            getFindNewShowButton(context),
+            getAddEpisodeButton(context),
+          ],
         ),
       ),
+    );
+  }
+
+  Widget getFindNewShowButton(BuildContext context) {
+    return ElevatedButton(
+      child: Text(
+        EpisodeStrings.buttonFindNewShow,
+      ),
+      onPressed: () => {Navigator.pushNamed(context, NavigationRoute.addShows)},
+    );
+  }
+
+  Widget getAddEpisodeButton(BuildContext context) {
+    return ElevatedButton(
+      child: Text(
+        EpisodeStrings.buttonAddEpisodeToShows,
+      ),
+      onPressed: () => {Navigator.pushNamed(context, NavigationRoute.myShows)},
     );
   }
 }
