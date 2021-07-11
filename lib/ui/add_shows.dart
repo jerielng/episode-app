@@ -14,7 +14,8 @@ class _AddShowsState extends State<AddShows> {
     return Scaffold(
       appBar: getAppBar(),
       body: Center(
-        child: Column(
+        child: GridView.count(
+          crossAxisCount: 1,
           children: [],
         ),
       ),
@@ -24,12 +25,7 @@ class _AddShowsState extends State<AddShows> {
   Widget getAppBar() {
     return AppBar(
       title: Text(EpisodeStrings.titleAddShow),
-      leading: IconButton(
-        icon: Icon(Icons.backup),
-        onPressed: () {
-          Navigator.pop(context);
-        },
-      ),
+      leading: BackButton(),
     );
   }
 }

@@ -24,12 +24,7 @@ class _MyShowsState extends State<MyShows> {
   Widget getAppBar() {
     return AppBar(
       title: Text(EpisodeStrings.titleMyShows),
-      leading: IconButton(
-        icon: Icon(Icons.backup),
-        onPressed: () {
-          Navigator.pop(context);
-        },
-      ),
+      leading: BackButton(),
     );
   }
 }
