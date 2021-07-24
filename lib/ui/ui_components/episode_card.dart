@@ -10,7 +10,6 @@ class EpisodeCard extends StatefulWidget {
 class _EpisodeCardState extends State<EpisodeCard> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return SizedBox();
   }
 }

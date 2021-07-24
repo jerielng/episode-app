@@ -1,4 +1,5 @@
 class EpisodeStrings {
+  static String appTitle = "Episode";
   static String buttonAddEpisodeToShows = "Add Episode to My Shows";
   static String buttonFindNewShow = "Find a New Show";
   static String buttonMarkAllUnwatched = "Mark All Unwatched";
