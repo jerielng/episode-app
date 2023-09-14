@@ -21,7 +21,7 @@ class _MyShowsState extends State<MyShows> {
     );
   }
 
-  Widget getAppBar() {
+  PreferredSizeWidget getAppBar() {
     return AppBar(
       title: Text(EpisodeStrings.titleMyShows),
       leading: BackButton(),

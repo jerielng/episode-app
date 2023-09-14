@@ -12,5 +12,6 @@ class User {
     this.showIds,
     this.watchedEpisodeIds,
     this.friendIds,
+    this.badgeIds,
   );
 }

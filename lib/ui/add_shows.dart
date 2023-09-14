@@ -22,7 +22,7 @@ class _AddShowsState extends State<AddShows> {
     );
   }
 
-  Widget getAppBar() {
+  PreferredSizeWidget getAppBar() {
     return AppBar(
       title: Text(EpisodeStrings.titleAddShow),
       leading: BackButton(),
