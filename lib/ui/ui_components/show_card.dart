@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class ShowCard extends StatelessWidget {
   final Show show;
 
-  ShowCard({Show show}) : this.show = show;
+  ShowCard({required Show show}) : this.show = show;
 
   @override
   Widget build(BuildContext context) {

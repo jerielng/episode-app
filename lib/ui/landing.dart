@@ -45,7 +45,7 @@ class Landing extends StatelessWidget {
     );
   }
 
-  Widget getAppBar() {
+  PreferredSizeWidget? getAppBar() {
     return AppBar(
       title: Text(
         EpisodeStrings.titleWelcomeBack,
