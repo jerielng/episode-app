@@ -1,12 +1,12 @@
 class User {
-  int id;
-  String userName;
-  List<int> showIds;
-  Map<int, List<int>> watchedEpisodeIds;
-  List<int> friendIds;
-  List<int> badgeIds;
+  final int id;
+  final String userName;
+  final List<int> showIds;
+  final Map<int, List<int>> watchedEpisodeIds;
+  final List<int> friendIds;
+  final List<int> badgeIds;
 
-  User(
+  const User(
     this.id,
     this.userName,
     this.showIds,

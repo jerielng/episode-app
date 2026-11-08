@@ -5,4 +5,5 @@ class NavigationRoute {
   static String logIn = '/logIn';
   static String signUp = '/signUp';
   static String badges = '/badges';
+  static String showEpisodes = '/showEpisodes';
 }

@@ -1,11 +1,7 @@
 class Episode {
-  int id;
-  int title;
-  int season;
+  final int id;
+  final String title;
+  final int season;
 
-  Episode(
-    this.id,
-    this.title,
-    this.season,
-  );
+  const Episode(this.id, this.title, this.season);
 }

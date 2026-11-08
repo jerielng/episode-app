@@ -1,11 +1,11 @@
 class Show {
-  int id;
-  String name;
-  int seasonCount;
-  List<int> episodeIds;
-  String imageName;
+  final int id;
+  final String name;
+  final int seasonCount;
+  final List<int> episodeIds;
+  final String imageName;
 
-  Show(
+  const Show(
     this.id,
     this.name,
     this.seasonCount,

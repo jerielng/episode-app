@@ -1,11 +1,7 @@
 class Badge {
-  int id;
-  String name;
-  String description;
+  final int id;
+  final String name;
+  final String description;
 
-  Badge(
-    this.id,
-    this.name,
-    this.description,
-  );
+  const Badge(this.id, this.name, this.description);
 }

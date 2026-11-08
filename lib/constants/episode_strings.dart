@@ -1,10 +1,10 @@
 class EpisodeStrings {
-  static String appTitle = "Episode";
-  static String buttonAddEpisodeToShows = "Add Episode to My Shows";
-  static String buttonFindNewShow = "Find a New Show";
-  static String buttonMarkAllUnwatched = "Mark All Unwatched";
-  static String buttonMarkAllWatched = "Mark All Watched";
-  static String titleAddShow = "Add Show";
-  static String titleMyShows = "My Shows";
-  static String titleWelcomeBack = "Welcome Back!";
+  static const String appTitle = 'Episode';
+  static const String buttonAddEpisodeToShows = 'Add Episode to My Shows';
+  static const String buttonFindNewShow = 'Find a New Show';
+  static const String buttonMarkAllUnwatched = 'Mark All Unwatched';
+  static const String buttonMarkAllWatched = 'Mark All Watched';
+  static const String titleAddShow = 'Add Show';
+  static const String titleMyShows = 'My Shows';
+  static const String titleWelcomeBack = 'Welcome Back!';
 }
